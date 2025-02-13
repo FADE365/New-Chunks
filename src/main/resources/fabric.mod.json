@@ -1,31 +1,25 @@
 {
   "schemaVersion": 1,
-  "id": "addon-template",
+  "id": "new-chunk",
   "version": "${version}",
-  "name": "New Chunks Addon",
-  "description": "An addon which adds New Chunks to Meteor Client.",
-  "authors": [
-    "staid"
-  ],
-  "contact": {
-    "repo": "https://github.com/MeteorDevelopment/meteor-addon-template"
-  },
-  "icon": "assets/template/icon.png",
+  "name": "New-Chunk",
+  "description": "addon for meteor add New Chunks",
+  "authors": ["FADE365"],
+  "contact": {},
+  "license": "BSD-3-Clause",
+  "icon": "assets/new-chunk/icon.png",
   "environment": "client",
   "entrypoints": {
     "meteor": [
-      "com.newchunks.addon.Addon"
+      "org.delta.newChunk.Addon"
     ]
   },
   "mixins": [
-    "addon.mixins.json"
+    "new-chunk.mixins.json"
   ],
-  "custom": {
-    "meteor-client:color": "225,25,25"
-  },
   "depends": {
-    "java": ">=17",
-    "minecraft": ">=${mc_version}",
-    "meteor-client": "*"
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
   }
 }
